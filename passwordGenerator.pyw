@@ -5,8 +5,8 @@
 
 import random
 import math
-from Tkinter import *
-import tkFont
+from tkinter import *
+import tkinter.font
 
 global letters
 global numbers
@@ -96,7 +96,7 @@ def window():
 	window.geometry('%dx%d+%d+%d' % (w, h, x, y))
 	buttons={"mode": 1, "length": 1}
 
-	font1 = tkFont.Font(family="Times New Roman", size=12)
+	font1 = font.Font(family="Times New Roman", size=12)
 	text = Text(window, bg="honeydew3", bd=0, width=80, height=6, font= font1)
 	text.pack()
 	text.insert('1.0', "\n   Password generator. Please, select the type of your password.\n\n\t [1] Simple, with just letters. \n\t [2] Common, with letters and numbers. \n\t [3] Complex, also with ASCII characters.")
