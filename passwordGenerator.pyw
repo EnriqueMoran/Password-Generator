@@ -1,8 +1,5 @@
 # -*- coding: utf-8 -*-
 
-#PYTHON 2.4
-
-
 import random
 import math
 from tkinter import *
@@ -188,37 +185,3 @@ def window():
 
 window()
 
-
-''' ######################  ON CONSOLE: #########################
-
-mode=input("Password generator. Please, select the type of your password. It can be: \n\n\t [1]-> Simple, with just letters. \n\t [2]-> Common, with letters and numbers. \n\t [3]-> Complex, also with ASCII characters.\n\n\t MODE: ")
-length=input("\nPlease, select the length of your password, It must be higher than 7.\n\n\t Length: ")
-if(mode==1):
-	print("\n\tPassword: %s" % simple(length))
-elif(mode==2):
-	print("\n\tPassword: %s" % common(length))
-elif(mode==3):
-	print("\n\tPassword: %s" % complex(length))
-else:
-	print("\n\tThe length must be higher than 7.")	
-
-'''
-
-
-
-''' ######################  TEST: #########################
-
-for i in range(8, 17):
-	print("Length: %d" %i)
-	print("Simple password: %s length: %d " % (simple(i), len(simple(i))))
-	print("Common password: %s length: %d " % (common(i), len(common(i))))
-	print("Complex password: %s length: %d \n" % (complex(i), len(complex(i))))
-
-'''
-
-
-
-
-
-
-#exit = raw_input("\n\n\nPress enter to exit.")
